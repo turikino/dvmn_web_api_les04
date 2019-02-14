@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# pyenv
+.python-version
+
+# Environments
+venv/
+
+
+# My Files
+images/
+.idea/
+.DS_Store
+test.py
+web_api_les04.py
+*.txt
+!requirements.txt
+*.log
+*.checkpoint
