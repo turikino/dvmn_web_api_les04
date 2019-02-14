@@ -2,7 +2,7 @@
 
 Скрипт `fetch_spacex.py` скачивает все фото с последнего запуска SpaceX.
 
-Скрипт `fetch_hubble.py` скачивает по указанному номеру одно изображение с сайта [hubblesite.org](htttp://hubblesite.org) 
+Скрипт `fetch_hubble.py` скачивает по указанному номеру одно изображение с сайта [hubblesite.org](http://hubblesite.org).
 
 Скрипт `upload_to_instagram.py` позволяет загрузить в аккаунт Instagram все изображения из указанной папки.
 
