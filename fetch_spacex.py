@@ -15,6 +15,6 @@ def fetch_spacex_last_lanch(path, filename):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     for number, url in enumerate(spacex_links):
         response = requests.get(url)
-        full_name = path + filename + str(number + 1) + '.jpeg'
+        full_name = '{}{}{}.jpeg'.format(path, filename, number + 1)
         with open(full_name, 'wb') as file:
             file.write(response.content)
