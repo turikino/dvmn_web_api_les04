@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ### Примеры использования
 
 ```python
->>> fetch_spacex.py -f spacex -p .../images/
+>>> fetch_spacex.py -f spacex -p .../images
 ...
 images $ tree
 .
@@ -31,7 +31,7 @@ images $ tree
 ```
 
 ```python
->>> fetch_hubble.py -i 4000 -p .../images/
+>>> fetch_hubble.py -i 4000 -p .../images
 ...
 images $ tree
 .
@@ -39,7 +39,7 @@ images $ tree
 ```
 
 ```python
->>> upload_to_instagram.py -u XXXXXX -pass YYYYYY  -p .../images/
+>>> upload_to_instagram.py -u XXXXXX -pass YYYYYY  -p .../images
 ...
 2019-02-17 15:41:22,849 - INFO - Instabot Started
 2019-02-17 15:41:24,531 - INFO - Logged-in successfully as 'XXXXXX'!

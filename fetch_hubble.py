@@ -24,8 +24,9 @@ def fetch_hubble_image(path, image_id):
     image_extention = os.path.splitext(image_link)[-1]
     os.makedirs(os.path.dirname(path), exist_ok=True)
     response = requests.get(image_link)
-    full_name = path + filename + '.' + image_extention
-    with open(full_name, 'wb') as file:
+    full_name = '{}.{}'.format(filename, image_extention)
+    full_path = os.path.join(path, full_name)
+    with open(full_path, 'wb') as file:
         file.write(response.content)
 
 
