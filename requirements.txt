@@ -1,3 +1,4 @@
 requests==2.21.0
 instabot==0.20.0
 Pillow==5.4.1
+argparse==1.4.0
