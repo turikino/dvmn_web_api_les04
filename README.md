@@ -39,14 +39,10 @@ images $ tree
 ```
 
 ```python
-from upload_to_instagram import upload_image_to_instagram
-
-path = '.../images/'
-...
->>> upload_image_to_instagram(path, "XXX", "YYY")
+>>> upload_to_instagram.py -u XXXXXX -pass YYYYYY  -p .../images/
 ...
 2019-02-17 15:41:22,849 - INFO - Instabot Started
-2019-02-17 15:41:24,531 - INFO - Logged-in successfully as 'XXX'!
+2019-02-17 15:41:24,531 - INFO - Logged-in successfully as 'XXXXXX'!
 2019-02-17 15:41:31,554 - INFO - Photo '.../images/Scale and Compass Image for Orion Nebula.png' is uploaded.
 2019-02-17 15:41:32,108 - INFO - Bot stopped. Worked: 3 days, 15:29:38.190158
 2019-02-17 15:41:32,109 - INFO - Total requests: 80
