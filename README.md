@@ -18,12 +18,7 @@ pip install -r requirements.txt
 ### Примеры использования
 
 ```python
-from fetch_spacex import fetch_spacex_last_lanch
-
-path = '.../images/'
-filename = 'spacex'
-...
->>> fetch_spacex_last_lanch(path, filename)
+>>> fetch_spacex.py -f spacex -p .../images/
 ...
 images $ tree
 .
@@ -36,12 +31,7 @@ images $ tree
 ```
 
 ```python
-from fetch_hubble import fetch_hubble_image
-
-path = '.../images/'
-image_id = 4000
-...
->>> fetch_hubble_image(path, image_id)
+>>> fetch_hubble.py -i 4000 -p .../images/
 ...
 images $ tree
 .
