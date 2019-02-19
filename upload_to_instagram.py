@@ -1,5 +1,14 @@
 import os
 from instabot import Bot
+import argparse
+
+
+def create_parser():
+    parser = argparse.ArgumentParser(description='Загружает все фото из папки в указанный аккаунт Instagram.')
+    parser.add_argument('-p', '--path', help='Путь к папке:')
+    parser.add_argument('-u', '--username', help='Login Instagram:')
+    parser.add_argument('-pass', '--password', help='Password Instagram:')
+    return parser
 
 
 def upload_image_to_instagram(path, username, password):
@@ -18,3 +27,12 @@ def upload_image_to_instagram(path, username, password):
                 image_path = os.path.join(root, image)
                 image_name = image.split('.')[0]
                 bot.upload_photo(image_path, caption=image_name)
+
+
+if __name__ == '__main__':
+    parser = create_parser()
+    args = parser.parse_args()
+    path = args.path
+    username = args.username
+    password = args.password
+    upload_image_to_instagram(path, username, password)
