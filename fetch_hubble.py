@@ -1,5 +1,13 @@
 import requests
 import os
+import argparse
+
+
+def create_parser():
+    parser = argparse.ArgumentParser(description='Скачивает одно изображение с указанным номером.')
+    parser.add_argument('-p', '--path', help='Путь к папке:')
+    parser.add_argument('-i', '--image_id', help='Номер изображения:')
+    return parser
 
 
 def fetch_hubble_image(path, image_id):
@@ -19,3 +27,11 @@ def fetch_hubble_image(path, image_id):
     full_name = path + filename + '.' + image_extention
     with open(full_name, 'wb') as file:
         file.write(response.content)
+
+
+if __name__ == '__main__':
+    parser = create_parser()
+    args = parser.parse_args()
+    path = args.path
+    image_id = args.image_id
+    fetch_hubble_image(path, image_id)
